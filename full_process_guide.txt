@@ -1,0 +1,19 @@
+pull data 
+	ask gpt for category 
+	edge case:
+		category dont match what I need
+		possible nudity item, where gpt has policy to not answer
+		gpt gives no answers in the reponse json
+	push answers to the results file
+	put the placements of the items that cannot be classified into a file 
+genwordembedding
+	tokenize each input (if input cannot be tokenized, skip)
+	generate word embeddings (if word embeddings can be generated)
+	one hot encode the endpoints 
+	push inputs to corresponding files
+	push outputs to corresponding files
+	record how many items are being pushed
+testing purpose 
+	clean vectors (get rid of all the vectors in the files) (only if necessary)
+	langdetect (detect amounts of language within the left data) (testing purposes)
+randomize data

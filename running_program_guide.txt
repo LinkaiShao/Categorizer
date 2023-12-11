@@ -1,0 +1,16 @@
+gpt categorize
+	1. have a csv file, utf-8 of the items that you want to categorize
+	2. have an empty file, which represents all the categories that gpt will answer
+	optional: have a file for the entries that will fail
+	opotional: set the starting point to provide to gpt
+generating word embeddings
+	1. have 3 files for languages vectors, 3 files for langauge end points
+	2. have 2 files, one is the csv file of items that you want to categorize, the other is the endpoints gpt has generated
+	3. have 1 file, start it with 0 1 2 (language codes) for each line, this one keeps track of how many items per run
+	4. run 
+Randomize_training_data
+	1. provide 6 files, language vectors, langauge endpoints
+	2. have 2 files, randomized vectors, randomized endpoints
+	3. provide the file that specifies how many items per run
+	optional: specify which run we want to prioritize
+	
